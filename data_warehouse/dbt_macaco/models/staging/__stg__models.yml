@@ -80,7 +80,34 @@ models:
           - not_null
       - name: etl_inserted_at
         description: "Timestamp de quando o dado foi carregado no modelo"
-      
+
+
+  - name: stg_frete_avarias
+    description: "Modelo staging para a tabela de avarias de frete. Contém dados limpos e transformações iniciais das avarias."
+    columns:
+      - name: nf
+        description: "Número da nota fiscal associada"
+      - name: data_ocorrencia
+        description: "Data da ocorrência de avaria"
+      - name: ocorrencia
+        description: "Tipo de ocorrência (ex: Avaria)"
+      - name: parceiro
+        description: "Parceiro logístico responsável"
+      - name: valor
+        description: "Valor da avaria"
+      - name: produto
+        description: "Produto afetado pela avaria"
+      - name: emissao
+        description: "Data de emissão do produto"
+      - name: quantidade
+        description: "Quantidade do produto afetado"
+      - name: categoria_produto
+        description: "Categoria do produto"
+      - name: uf
+        description: "Unidade Federativa (UF) relacionada"
+      - name: sku
+        description: "SKU do produto"
+
   - name: stg_cadastros_2
 
   - name: stg_luciano

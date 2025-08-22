@@ -1,0 +1,7 @@
+services:
+  scheduler:
+    volumes:
+      - ./dbt/dbt_macaco:/usr/local/airflow/dbt/dbt_macaco
+  dag-processor:
+    volumes:
+      - ./dbt/dbt_macaco:/usr/local/airflow/dbt/dbt_macaco
